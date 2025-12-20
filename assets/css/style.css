@@ -1371,7 +1371,8 @@ form label {
 #fh5co-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
-#fh5co-started .btn {
+#fh5co-started .btn,
+.fh5co-section .btn {
   height: 54px;
   border: none !important;
   background: #F14E95;
