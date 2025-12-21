@@ -18,11 +18,11 @@
                     {% for file in site.pages %}
                         {% if file.path != "gallery.html" %}
                             {% if file.dir contains include_folder %}
-                                {% capture image %}/{{ file.path | replace: '.html', '.jpg' }}{% endcapture %}
+                                {% capture image %}/{{ file.path | replace: '.html', '.webp' }}{% endcapture %}
                                 {% assign counter = 0 %}
                                 {% for f in site.static_files %}
                                     {% if f.path contains file.dir %}
-                                        {% if f.name != 'index.jpg' %}
+                                        {% if f.name != 'index.webp' %}
                                             {% assign counter = counter | plus: 1 %}
                                         {% endif %}
                                     {% endif %}
