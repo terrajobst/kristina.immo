@@ -1844,6 +1844,13 @@ form label {
 }
 
 /* Venue carousel cards */
+.venue-carousel .owl-stage-outer {
+  overflow: visible;
+}
+.venue-carousel {
+  padding: 10px 0 20px;
+  overflow: hidden;
+}
 .venue-carousel .item {
   display: block;
   text-decoration: none;
