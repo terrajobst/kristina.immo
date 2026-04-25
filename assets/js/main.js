@@ -140,6 +140,22 @@
         });
     };
 
+    var venueCarousel = function() {
+        $('.venue-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            navText: ['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
+            dots: true,
+            smartSpeed: 600,
+            responsive: {
+                0:   { items: 1 },
+                600: { items: 2 },
+                900: { items: 3 }
+            }
+        });
+    };
+
     var goToTop = function() {
         $('.js-gotop').on('click', function(event) {
             event.preventDefault();
@@ -187,6 +203,7 @@
         contentWayPoint();
         dropdown();
         testimonialCarousel();
+        venueCarousel();
         goToTop();
         loaderPage();
         counter();
