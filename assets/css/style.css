@@ -1889,7 +1889,11 @@ form label {
   font-size: 14px;
   line-height: 1.5;
   color: #828282;
-  min-height: 42px;
+  height: 42px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .venue-carousel .owl-nav {
   position: absolute;
