@@ -1889,6 +1889,7 @@ form label {
   font-size: 14px;
   line-height: 1.5;
   color: #828282;
+  min-height: 42px;
 }
 .venue-carousel .owl-nav {
   position: absolute;
