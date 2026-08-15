@@ -10,6 +10,9 @@
 - title: Gallery
   page: gallery.html
   url: /gallery
+- title: Registry
+  page: registry.html
+  url: /registry
 - title: RSVP
-  page: rspv.html
+  page: rsvp.html
   url: /rsvp
