@@ -1948,4 +1948,51 @@ form label {
   background: #F14E95;
 }
 
+/* Event timeline ---------------------------------------------------------- */
+
+/* Date and time as a flex row: two equal, centred columns of equal height,
+   with the paragraph below always on its own line. Deliberately not the
+   theme's .event-col, which floats these columns and let the paragraph wrap
+   up into the gap beside the shorter one. */
+#fh5co-event .event-meta {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+#fh5co-event .event-meta-col {
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+
+@media screen and (min-width: 992px) {
+  /* Cards fill the container rather than the narrower col-md-10 wrapper. */
+  #fh5co-event .event-row {
+    width: 100%;
+    margin-left: 0;
+    display: -webkit-flex;
+    display: flex;
+  }
+  /* Stretch all three cards to the height of the tallest. */
+  #fh5co-event .event-row > div {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+/* Three cards need more width than the theme's two, so they stack below the
+   md breakpoint. The theme only drops its fixed section height at 768px,
+   which would leave the stacked cards overflowing on tablets. */
+@media screen and (max-width: 991px) {
+  #fh5co-event {
+    height: auto;
+    padding: 7em 0;
+  }
+  #fh5co-event .display-t,
+  #fh5co-event .display-tc {
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
